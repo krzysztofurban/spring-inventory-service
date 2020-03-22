@@ -29,4 +29,3 @@ eureka:
       default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     prefer-ip-address: false
-

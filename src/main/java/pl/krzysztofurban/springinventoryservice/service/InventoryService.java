@@ -23,7 +23,7 @@ public class InventoryService {
                 .inventoryId(1L)
                 .productId(productId)
                 .price(200D)
-                .quantity(2D)
+                .quantity(32D)
                 .build());
     }
 }
