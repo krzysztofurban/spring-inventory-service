@@ -4,6 +4,11 @@ server:
     context-path: /inventory
 
 spring:
+  application:
+    name: inventory-service
+  sleuth:
+    sampler:
+      percentage: 1.0
   jpa:
     hibernate:
       ddl-auto: create
@@ -29,3 +34,5 @@ eureka:
       default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     prefer-ip-address: false
+
+spring.zipkin.base-url: http://localhost:9411/
